@@ -1,5 +1,5 @@
 const router = require('express').Router(); 
-const { notes } = require('../../Develop/db/db.json');
+const { notes } = require('../../data/db.json');
 
 // router.get('/notes', (req,res) => {
 //     let results = notes; 
@@ -9,16 +9,8 @@ const { notes } = require('../../Develop/db/db.json');
 //     res.json(results);
 // }); 
 
-router.get("/notes/:id", (req,res) => {
-    const result = findById(req.params.id, notes)
-    if (result) {
-        res.json(result); 
-    } else {
-        res.send(404)
-    }
-});
 
-router.post('/animals', (req,res) => {
+router.post('/notes', (req,res) => {
     req.body.id = animals.length.toString(); 
 
     if (!validateNotes (req.body)) {
