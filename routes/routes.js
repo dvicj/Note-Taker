@@ -18,7 +18,6 @@ module.exports = app => {
 
         //add notes data 
         app.post("/api/notes", function(req, res) {
-            req.body.id = notes.length.toString(); 
            let newNote = req.body; 
            notes.push(newNote);
            updateNotes(); 
@@ -49,7 +48,7 @@ module.exports = app => {
 
         //update the db json file 
         function updateNotes() {
-            fs.writeFile("db/db.json",JSON.stringify(notes,'\t'),err => {
+            fs.writeFile("db/db.json",JSON.stringify(notes),err => {
                 if (err) throw err;
                 return true;
             });
