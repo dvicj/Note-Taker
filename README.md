@@ -6,6 +6,8 @@ Hello, and welcome to my README! This is for my Week 11 Challenge, which was to 
 
 ![website demo]()
 
+[Note Taker](https://guarded-thicket-25037.herokuapp.com/)
+
 It was my job to ensure my Note Taking app had the following features:
 
 - GET /notes - returns the notes.html file
@@ -46,7 +48,7 @@ The user must have [Node.js](https://nodejs.org/en/download/) installed on their
 
 Then, the user must download Express.js by entering "npm install "express"". This will allow the user to run the application locally. To run the server, user must enter "node server.js" or "npm start" to start the server. The server can then be opened on any browser on "localhost:3000". 
 
-The app is also deployed on [Heroku]() that can be accessed from anywhere. 
+The app is also deployed on [Heroku](https://guarded-thicket-25037.herokuapp.com/) that can be accessed from anywhere. 
 
 ## Usage
 Here are some user experience highlights from my page:
