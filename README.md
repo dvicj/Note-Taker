@@ -72,7 +72,9 @@ I was able to get my .gitignore working properly this time around, so node_modul
 
 I really enjoyed how clean and simple the code ended up being. I found it much easier to understand and write than JavaScript code in the past. 
 
-I liked using Heroku and Insomnia, I look forward to using them more in the future. 
+I liked using Heroku and Insomnia, I look forward to using them more in the future.
+
+I'm not sure if the delete function is working properly, but I gave it a shot. 
 
 ## License
 MIT License

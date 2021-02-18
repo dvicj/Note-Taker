@@ -18,9 +18,9 @@ module.exports = app => {
 
         //add notes data 
         app.post("/api/notes", function(req, res) {
-           let newNote = req.body; 
-           notes.push(newNote);
-           updateNotes(); 
+            let newNote = req.body; 
+            notes.push(newNote);
+            updateNotes(); 
             return console.log(`Added ${newNote.title}!`); 
         });
 
@@ -45,7 +45,6 @@ module.exports = app => {
         app.get('*', function(req,res) {
             res.sendFile(path.join(__dirname, "../public/index.html"));
         });
-
         //update the db json file 
         function updateNotes() {
             fs.writeFile("db/db.json",JSON.stringify(notes),err => {
